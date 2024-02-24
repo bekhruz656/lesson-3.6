@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.cards{
+    gap: 70px;
+    display: flex;
+    justify-content: center; 
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 600px) {
+    .box{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(0, 242, 255);
+        
+    }  
+
+    .cards{
+        flex-wrap: wrap;
+    }
+
+    body{
+        background-color: rgb(255, 85, 0);
+    }
+    
+}
+
+
+/* Media query for screens with a width between 601 and 768 pixels */
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    .box{
+        width: 90px;
+        height: 90px;
+        background-color: rgb(221, 0, 255);
+    }
+
+    .cards{
+        flex-wrap: wrap;
+    }
+
+    body{
+        background-color: rgb(0, 255, 255);
+    }
+    
+}
+
+/* Media query for screens with a width between 769 and 1024 pixels */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .box{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(255, 145, 0);
+        
+    }
+
+    body{
+        background-color: rgb(0, 255, 21);
+    }
+    
+}
+
+/* Media query for screens with a width between 1025 and 1200 pixels */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .box{
+        width: 120px;
+        height: 120px;
+        background-color: rgb(25, 0, 255);
+         
+    }
+
+    body{
+        background-color: rgb(255, 0, 166);
+    }
+    
+}
+
+/* Media query for screens with a minimum width of 1201 pixels */
+@media screen and (min-width: 1201px) {
+    .box{
+        width: 150px;
+        height: 150px;
+        background-color: rgb(0, 255, 38);
+        
+    }
+
+    body{
+        background-color: white;
+    }
+    
+}
